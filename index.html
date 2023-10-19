@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency exchange</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+
+    <link
+      rel="stylesheet"
+      href="link rel="
+      preconnect
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <h2 class="header">Oblicz Walutę</h2>
+    <form class="js-form header">
+      <!-- <fieldset class="header"> -->
+      <!-- <legend class="header">Kalkulator</legend> -->
+
+      <label>
+        Przesuń w celu sprawdzenia ceny
+        <form>
+          <input
+          class="js-pln"
+            type="range"
+            value="1"
+            min="1"
+            max="100"
+            oninput="this.nextElementSibling.value = this.value"
+          />
+          <output>1</output>
+        </form>
+      </label>
+      <p class="header">
+        <label>
+          <span class="form__labelText">Aktualny kurs Euro</span>
+          <input class="js-eur" name="readonly" readonly value="4.43" />
+        </label>
+      </p>
+      <p class="header">
+        <label>
+          <span class="">Aktualny kurs dolara: </span>
+          <input class="js-usd" name="readonly" readonly value="4.21" />
+        </label>
+      </p>
+      <!-- </fieldset> -->
+
+      <article class="sum">
+        <p>
+          Na Euro Przygotuj : <strong class="js-eursum">0 </strong
+          ><strong> Zł</strong>
+        </p>
+        <p>
+          Na Dolary Przygotuj : <strong class="js-usdsum">0 </strong
+          ><strong> Zł</strong>
+        </p>
+        <p>
+          Mała ciekawostka, za te kwote możesz mieć :
+          <strong class="js-btcsum strong">0 </strong><strong> Bitcoina</strong>
+        </p>
+      </article>
+    </form>
+  </body>
+</html>
