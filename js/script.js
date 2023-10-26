@@ -1,23 +1,23 @@
 {
-  let plnElement = document.querySelector(".js-pln");
-  let eurElement = document.querySelector(".js-eur");
-  let usdElement = document.querySelector(".js-usd");
-  let formElement = document.querySelector(".js-form");
-  let eursumElement = document.querySelector(".js-eursum");
-  let usdsumElement = document.querySelector(".js-usdsum");
-  let btcsumElement = document.querySelector(".js-btcsum");
+  const plnElement = document.querySelector(".js-pln");
+  const eurElement = document.querySelector(".js-eur");
+  const usdElement = document.querySelector(".js-usd");
+  const formElement = document.querySelector(".js-form");
+  const eursumElement = document.querySelector(".js-eursum");
+  const usdsumElement = document.querySelector(".js-usdsum");
+  const btcsumElement = document.querySelector(".js-btcsum");
 
   formElement.addEventListener("input", (event) => {
     event.preventDefault();
 
-    let eur = eurElement.value;
-    let usd = usdElement.value;
-    let pln = plnElement.value;
-    let btc = 119143;
+    const eur = eurElement.value;
+    const usd = usdElement.value;
+    const pln = plnElement.value;
+    const btc = 119143;
 
-    let sum = pln * eur;
-    let sumUSD = pln * usd;
-    let sumBTC = pln / btc;
+    const sum = pln * eur;
+    const sumUSD = pln * usd;
+    const sumBTC = pln / btc;
 
     eursumElement.innerText = sum.toFixed(2);
     usdsumElement.innerText = sumUSD.toFixed(2);
