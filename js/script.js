@@ -10,7 +10,7 @@
   const eurElement = document.querySelector(".js-eur");
   const usdElement = document.querySelector(".js-usd");
 
-  formElement.addEventListener("input", (event) => {
+  const init = () =>   formElement.addEventListener("input", (event) => {
     event.preventDefault();
   
     let eur = eurElement.value;
@@ -26,5 +26,5 @@
     usdsumElement.innerText = sumUSD.toFixed(2);
     btcsumElement.innerText = sumBTC.toFixed(10);
   });
-  
+  init();
 }
