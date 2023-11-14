@@ -19,7 +19,7 @@
 
       eursumElement.innerText = sum.toFixed(2);
       usdsumElement.innerText = sumUSD.toFixed(2);
-      btcsumElement.innerText = sumBTC.toFixed(10);
+      btcsumElement.innerText = sumBTC.toFixed(8);
     });
   init();
 }
